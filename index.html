@@ -26,7 +26,7 @@
       <li><a href="#about" class="nav-link">About</a></li>
       <li><a href="#skills" class="nav-link">Skills</a></li>
       <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <!-- <li><a href="#contact" class="nav-link">Contact</a></li> -->
     </ul>
     <button class="burger-menu" id="burger-menu">
       <ion-icon class="bars" name="menu-outline"></ion-icon>
@@ -34,15 +34,13 @@
     </button>
   </nav>
 
-  <p> 0024 </p>
-
   <!-- Hero Section -->
   <section class="hero" id="about">
-    <img src="assets/images/wfh_1.svg" alt="jane-doe" loading="lazy" class="hero-img" />
+    <img src="assets/images/me.png" alt="me" loading="lazy" class="hero-img" />
     <div class="bio animate__animated animate__shakeX">
       <h2 class="bio-title">About Me</h2>
       <p class="bio-text">
-      Aspiring Software Developer with a passion to explore all fields.
+        Aspiring Software Developer with a passion to explore various fields.
       </p>
     </div>
   </section>
@@ -51,18 +49,18 @@
   <section class="more-about">
     <h2>More About Me</h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-      nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-      autem deleniti cupiditate molestias quis unde quae totam porro dicta
-      iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+      I'm a final year B.Tech Information Technology student at MIT Campus - Anna University, Chennai.
     </p>
     <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-      nostrum dolor minus, libero delectus praesentium perferendis
+      I have a keen interest in Web Development and Machine Learning, and I'm currently learning ReactJS and PyTorch. I
+      aspire to
+      develop software that can run on any platform with minimal difference in performance.
     </p>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-      consequuntur labore? Ea totam voluptas amet!
+      Over the next few years, I hope to gain experience in the field of software development and develop a niche.
+    </p>
+    <p>
+      Apart from development, I spend a lot of time writing, reading and participating in campus activities.
     </p>
   </section>
 
@@ -72,15 +70,17 @@
 
     <div class="skills-wrapper">
       <div class="first-set animate__animated animate__pulse">
-        <img src="assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-c++.svg" alt="cpp" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-python.svg" alt="python" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-bash.svg" alt="bash" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-javascript.svg" alt="js" loading="lazy" class="icon icon-card" />
       </div>
 
       <div class="second-set animate__animated animate__pulse">
-        <img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/icons8-react-native.svg" alt="" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-html-5.svg" alt="html" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-css3.svg" alt="css" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-git.svg" alt="git" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-latex.svg" alt="latex" loading="lazy" class="icon icon-card" />
       </div>
     </div>
   </section>
@@ -88,42 +88,59 @@
   <!-- Projects section -->
   <section class="projects" id="projects">
     <h2 class="projects-title">Some of my Recent Projects</h2>
-    <div class="projects-container">
+    <div class="projects-container first-set">
       <div class="project-container project-card">
-        <img src="assets/images/expenseTracker.png" alt="expense-tracker" loading="lazy" class="project-pic" />
-        <h3 class="project-title">Expense Tracker</h3>
+        <!-- <img src="assets/images/greenyEarth.png" alt="greeny-earth" loading="lazy" class="project-pic" /> -->
+        <h3 class="project-title">Classification of MGMT Promoter Methylation in Glioblastoma Patients Using
+          EfficientNet-RNN</h3>
         <p class="project-details">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-          ratione vel inventore labore commodi modi quos culpa aut saepe!
-          Alias!
-        </p>
-        <a href="#" target="_blank" class="project-link">Check it Out</a>
+          While MGMT itself is not identifiable from images, this project attempts to predict its presence from
+          multimodal MRI data acquired from Radiological Society of North America (RSNA). The proposed method trains an
+          EfficientNet-RNN model for each of the 4 modalities of the MRI and fuses their individual outputs to produce
+          an AU-ROC score of 0.5876, which is an improvement on the individual values. </p>
+        <a href="https://easychair.org/publications/preprint/QVwD" target="_blank" class="project-link">Check it Out</a>
       </div>
       <div class="project-container project-card">
+        <!-- <img src="assets/images/webrtc.png" alt="expense-tracker" loading="lazy" class="project-pic" /> -->
+        <h3 class="project-title">Realtime suppression of non-stationary noise for web-based calls</h3>
+        <p class="project-details">
+          Developed a audio-video calling application with support for noise-suppression in client-side. Reimplemented
+          audio processing library functions from Librosa in JavaScript with Tensorflow.js and AudioBuffer objects.
+        </p>
+        <a href="https://github.com/tvrsimhan/tfjs-rnn" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+    <div class="projects-container second-set">
+
+      <!-- <div class="project-container project-card">
         <img src="assets/images/netflixClone.png" alt="netflic-clone" loading="lazy" class="project-pic" />
-        <h3 class="project-title">Netflix Clone</h3>
+        <h3 class="project-title">Image Colorization</h3>
         <p class="project-details">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-          ratione vel inventore labore commodi modi quos culpa aut saepe!
-          Alias!
-        </p>
+          Trained a GAN with U-Net as generator and a patch discriminator to colorize grey-scale images </p>
         <a href="#" target="_blank" class="project-link">Check it Out</a>
-      </div>
+      </div> -->
       <div class="project-container project-card">
-        <img src="assets/images/greenyEarth.png" alt="greeny-earth" loading="lazy" class="project-pic" />
-        <h3 class="project-title">Greeny Earth</h3>
+        <!-- <img src="assets/images/greenyEarth.png" alt="greeny-earth" loading="lazy" class="project-pic" /> -->
+        <h3 class="project-title">Snake Game</h3>
         <p class="project-details">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-          ratione vel inventore labore commodi modi quos culpa aut saepe!
-          Alias!
-        </p>
-        <a href="#" target="_blank" class="project-link">Check it Out</a>
+          Developed the classic game using client-side JavaScript, HTML and CSS. Used nodeJS and Mongoose to store and
+          display the scores and deployed </p>
+        <a href="https://github.com/tvrsimhan/snake-game-by-simhan" target="_blank" class="project-link">Check it
+          Out</a>
+      </div>
+
+      <div class="project-container project-card">
+        <!-- <img src="assets/images/greenyEarth.png" alt="greeny-earth" loading="lazy" class="project-pic" /> -->
+        <h3 class="project-title">Text Editor</h3>
+        <p class="project-details">
+          Text editor made with C++ and ncurses. It works on Linux terminal and is easy to use.</p>
+        <a href="https://github.com/tvrsimhan/insomn" target="_blank" class="project-link">Check it Out</a>
       </div>
     </div>
   </section>
 
   <!-- Contact section -->
-  <section class="contact" id="contact">
+  <!-- <section class="contact" id="contact">
     <h2>Get In Touch With Me</h2>
     <div class="contact-form-container">
       <div class="contact-form">
@@ -147,17 +164,20 @@
         </form>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Social accounts - Fixed to the right -->
   <div class="socials">
-    <a href="#" target="_blank"><img src="assets/icons/icons8-twitter-circled.gif" alt="Twitter" loading="lazy"
+    <!-- <a href="#" target="_blank"><img src="assets/icons/icons8-twitter-circled.gif" alt="Twitter" loading="lazy"
+        class="socicon" /></a> -->
+    <a href="https://www.instagram.com/not_able_writer/" target="_blank"><img src="assets/icons/icons8-instagram.gif"
+        alt="Instagram" loading="lazy" class="socicon" /></a>
+    <a href="https://www.linkedin.com/in/tvrsimhan" target="_blank"><img src="assets/icons/icons8-linkedin-circled.gif"
+        alt="Linkedin" loading="lazy" class="socicon" /></a>
+    <a href="https://github.com/tvrsimhan" target="_blank"><img src="assets/icons/icons8-github.gif" alt="Github"
         class="socicon" /></a>
-    <a href="#" target="_blank"><img src="assets/icons/icons8-instagram.gif" alt="Instagram" loading="lazy"
-        class="socicon" /></a>
-    <a href="#" target="_blank"><img src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy"
-        class="socicon" /></a>
-    <a href="#" target="_blank"><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon" /></a>
+    <a href="https://drive.google.com/file/d/1tOvo0XG4zjegon2PtvQPaGMbCu7Rej1u/view?usp=sharing" target="_blank"><img
+        src="assets/icons/icons8-cv-30.png" alt="Resume" class="socicon" /></a>
   </div>
 
   <!-- Scroll to top -->
@@ -168,7 +188,7 @@
   <footer>
     <p class="copy">&copy; Copyright 2021</p>
     <p class="copy">
-      Built with &#x2661; by
+      Built based on template by
       <a href="https://twitter.com/koladechris" target="_blank">Kolade Chris (Ksound)</a>
     </p>
   </footer>
